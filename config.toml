@@ -1,0 +1,18 @@
+baseurl = "http://www.sslife.tech/"
+languageCode = "ja"
+title = "SS Life Tech"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; sslife.tech Copyright"
+theme = 'vienna'
+
+[params]
+    # ga_api_key = "Your Google Analytics tracking id"
+    # Mixpanel API key.
+    # mixpanel_api_key = "Your Mixpanel API key"
+    author = "Your Name"
+    avatar = "/path/to/avatar"
+    # contact = "Your contact link (ex. mailto:foo@example.com)"
+    bio = "Your short bio"
+    # Short subtitle/tagline. This is displayed in the header.
+    subtitle = "Short subtitle/tagline of your blog"
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
