@@ -6,13 +6,11 @@ copyright = "&copy; sslife.tech Copyright"
 theme = 'vienna'
 
 [params]
+    image = "/images/bg.webp"
     # ga_api_key = "Your Google Analytics tracking id"
-    # Mixpanel API key.
-    # mixpanel_api_key = "Your Mixpanel API key"
-    author = "Your Name"
-    avatar = "/path/to/avatar"
+    author = "しょうちゃん"
+    avatar = "/images/shota.webp"
     # contact = "Your contact link (ex. mailto:foo@example.com)"
-    bio = "Your short bio"
-    # Short subtitle/tagline. This is displayed in the header.
-    subtitle = "Short subtitle/tagline of your blog"
-    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    bio = "恵比寿で働くサーバーサイドエンジニア。隙きあらばGolangやってます。趣味はコーヒー、紅茶、旅行。ITツールが大好き。"
+    subtitle = "しょうちゃんとしおりんのブログ"
+    themecolor = "#fff" # Defines the tab color in Chrome for Android.

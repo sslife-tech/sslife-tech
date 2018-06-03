@@ -1,0 +1,32 @@
+<section class="about">
+  <section class="author-info row">
+    <div class="author-avatar col-md-2">
+      {{ with .Site.Data.profile.shota.avator }}
+      <img alt="Author Avatar" src="{{ . }}"/>
+      {{ end }}
+    </div>
+    <div class="author-meta col-md-10">
+      {{ with .Site.Data.profile.shota.name }}
+      <h1 class="author-name text-primary">{{ . }}</h1>
+      {{ end }}
+      {{ with .Site.Data.profile.shota.bio }}
+      <div class="author-bio">{{ . }}</div>
+      {{ end }}
+    </div>
+  </section>
+  <section class="author-info row">
+    <div class="author-meta col-md-10">
+      {{ with .Site.Data.profile.shiori.name }}
+      <h1 class="author-name text-primary text-right">{{ . }}</h1>
+      {{ end }}
+      {{ with .Site.Data.profile.shiori.bio }}
+      <div class="author-bio">{{ . }}</div>
+      {{ end }}
+    </div>
+    <div class="author-avatar col-md-2">
+      {{ with .Site.Data.profile.shiori.avator }}
+      <img alt="Author Avatar" src="{{ . }}"/>
+      {{ end }}
+    </div>
+  </section>
+</section>
