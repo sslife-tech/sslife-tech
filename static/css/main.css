@@ -318,3 +318,32 @@ article section img {
     font-size: 16px;
     line-height: 150%;
 }
+
+.post {
+    display: flex;
+}
+
+
+.post .thumb img{
+    object-fit: cover;
+    height: 135px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 640px) {
+    .post {
+        display: block;
+    }
+
+    .post .thumb{
+        margin-bottom: 20px;
+    }
+
+    .post .thumb img{
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+        max-height: 350px;
+    }
+}
