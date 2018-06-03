@@ -4,6 +4,6 @@ Description: ""
 Tags: []
 author: shota
 date: {{ .Date }}
-draft: true
+draft: false
 ---
 
