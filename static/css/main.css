@@ -292,8 +292,29 @@ article section img {
     width: 100%;
     max-width: 750px;
     padding: 10px;
+    border-top: 1px solid #ccc;
 }
 
 .about .author-info {
     border: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .about {
+        text-align: center;
+    }
+
+    .about .author-avatar {
+        margin-bottom: 10px;
+    }
+}
+
+.babylink-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.babylink-box .babylink-title {
+    font-size: 16px;
+    line-height: 150%;
 }
