@@ -1,13 +1,43 @@
 version: 2
+
 jobs:
   build:
-    docker:
-      - image: debian:stretch
+    working_directory: &working_directory ~/workspace
+    docker: &docker
+      - image: sawadashota/hugo-firebase:latest
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name:
+          command: git submodule sync
       - run:
-          name: Print the Current Time
-          command: date
+          name: Update submodules
+          command: git submodule update --init
+      - run:
+          name: Build
+          command: HUGO_ENV=production hugo
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+            - .firebaserc
+            - firebase.json
+  deploy:
+    working_directory: *working_directory
+    docker: *docker
+    steps:
+      - attach_workspace:
+          at: .
+      - deploy:
+          command: firebase deploy --only hosting --token $FIREBASE_TOKEN
+workflows:
+  version: 2
+  default:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
