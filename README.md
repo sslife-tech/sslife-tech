@@ -10,7 +10,8 @@ Installation
 ---
 
 ```bash
-git clone https://github.com/sawadashota/sslife-tech.git --recursive
+$ git clone https://github.com/sawadashota/sslife-tech.git
+$ git submodule update --init
 ```
 
 Serve
