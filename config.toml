@@ -6,7 +6,7 @@ copyright = "&copy; sslife.tech Copyright"
 theme = 'vienna'
 
 [params]
-    image = "/images/bg.webp"
+    image = "/images/bg.jpg"
     ga_api_key = "UA-106924133-1"
     author = "しょうちゃん"
     avatar = "/images/shota.webp"
