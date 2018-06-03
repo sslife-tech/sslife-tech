@@ -1,23 +1,31 @@
 <article>
   <header>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+
     <div class="post-meta clearfix">
-      <div class="post-date pull-left">
+      <div class="post-date pull-right">
         Posted on
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" | safeHTML }}">
         {{ .Date.Format "2006.1.2" }}
         </time>
       </div>
     </div>
   </header>
-  <div>
-    {{ substr .Summary 0 120 }}
-  </div>
-  {{ if .Truncated }}
+  <section class="post">
+    {{ if .Params.featured_image }}
+    <section class="thumb col-md-4">
+      <img src="{{ .Params.featured_image }}" alt="Thumbnail">
+    </section>
+    {{ end }}
+    <section class="{{ if .Params.featured_image }}col-md-8{{ end }}">
+      <div>
+        {{ substr .Summary 0 120 }}
+      </div>
+    </section>
+  </section>
   <footer>
     <ul class="pager">
-      <li class="next"><a href="{{ .Permalink }}">Read more <span aria-hidden="true">&raquo;</span></a></li>
+      <li class="next"><a href="{{ .Permalink }}">もっと読む <span aria-hidden="true">&raquo;</span></a></li>
     </ul>
   </footer>
-  {{ end }}
 </article>

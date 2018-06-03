@@ -292,8 +292,58 @@ article section img {
     width: 100%;
     max-width: 750px;
     padding: 10px;
+    border-top: 1px solid #ccc;
 }
 
 .about .author-info {
     border: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .about {
+        text-align: center;
+    }
+
+    .about .author-avatar {
+        margin-bottom: 10px;
+    }
+}
+
+.babylink-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.babylink-box .babylink-title {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.post {
+    display: flex;
+}
+
+
+.post .thumb img{
+    object-fit: cover;
+    height: 135px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 640px) {
+    .post {
+        display: block;
+    }
+
+    .post .thumb{
+        margin-bottom: 20px;
+    }
+
+    .post .thumb img{
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+        max-height: 350px;
+    }
 }
