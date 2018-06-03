@@ -80,12 +80,12 @@
       {{ if .Next }}
       <li class="previous"><a href="{{ .Next.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
       {{ else }}
-      <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+      <li class="previous disabled"><a href="#!"><span aria-hidden="true">&larr;</span> Older</a></li>
       {{ end }}
       {{ if .Prev }}
       <li class="next"><a href="{{ .Prev.Permalink }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ else }}
-      <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      <li class="next disabled"><a href="#!">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
     </ul>
   </footer>

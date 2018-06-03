@@ -323,6 +323,9 @@ article section img {
     display: flex;
 }
 
+.post .thumb{
+    text-align: center;
+}
 
 .post .thumb img{
     object-fit: cover;
@@ -346,4 +349,22 @@ article section img {
         width: 100%;
         max-height: 350px;
     }
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 130%;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 130%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.author-name {
+    font-size: 22px;
 }
