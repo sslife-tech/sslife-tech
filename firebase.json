@@ -6,6 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source" : "blog-ss-life-tech.firebaseapp.com",
+        "destination" : "https://www.sslife.tech/",
+        "type" : 301
+      }
+    ],
     "rewrites": [
       {
         "source": "**",

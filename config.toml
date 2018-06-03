@@ -4,6 +4,8 @@ title = "SS Life Tech"
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; sslife.tech Copyright"
 theme = 'vienna'
+enableEmoji = true
+uglyURLs= true
 
 [params]
     image = "/images/bg.jpg"
