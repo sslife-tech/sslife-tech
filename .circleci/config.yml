@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: &working_directory ~/workspace
     docker: &docker
-      - image: sawadashota/hugo-firebase:latest
+      - image: sawadashota/hugo-firebase:1.0.1
     steps:
       - checkout
       - run:
