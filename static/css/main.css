@@ -368,3 +368,7 @@ iframe {
 .author-name {
     font-size: 22px;
 }
+
+.article-body {
+    margin-top: 40px;
+}
