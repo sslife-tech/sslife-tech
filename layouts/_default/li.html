@@ -13,11 +13,9 @@
   <div>
     {{ substr .Summary 0 120 }}
   </div>
-  {{ if .Truncated }}
   <footer>
     <ul class="pager">
-      <li class="next"><a href="{{ .Permalink }}">Read more <span aria-hidden="true">&raquo;</span></a></li>
+      <li class="next"><a href="{{ .Permalink }}">もっと読む <span aria-hidden="true">&raquo;</span></a></li>
     </ul>
   </footer>
-  {{ end }}
 </article>
