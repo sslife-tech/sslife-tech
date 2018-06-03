@@ -1,9 +1,12 @@
 SSLife Tech
 ===
 
+[![CircleCI](https://circleci.com/gh/sawadashota/sslife-tech/tree/master.svg?style=svg)](https://circleci.com/gh/sawadashota/sslife-tech/tree/master)
+
 Required
 ---
 
+* [hugo](https://github.com/gohugoio/hugo)
 * [go-task/task](https://github.com/go-task/task)
 
 Installation
