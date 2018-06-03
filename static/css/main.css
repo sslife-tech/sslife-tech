@@ -300,7 +300,7 @@ article section img {
 }
 
 @media screen and (max-width: 640px) {
-    .about {
+    .about, .author-info {
         text-align: center;
     }
 

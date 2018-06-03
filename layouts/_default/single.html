@@ -79,12 +79,15 @@
     {{ end }}
     <ul class="pager">
       {{ if .Next }}
-      <li class="previous"><a href="{{ .Next.Permalink }}"><span aria-hidden="true">&larr;</span> Older</a></li>
+      <li class="previous"><a href="{{ .Next.Permalink }}"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Older</a></li>
       {{ else }}
       <li class="previous disabled"><a href="#!"><span aria-hidden="true">&larr;</span> Older</a></li>
       {{ end }}
+
+      <li class="home"><a href="{{ .Site.BaseURL }}"><i class="fa fa-home"></i> Home</a></li>
+
       {{ if .Prev }}
-      <li class="next"><a href="{{ .Prev.Permalink }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      <li class="next"><a href="{{ .Prev.Permalink }}">Newer <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></li>
       {{ else }}
       <li class="next disabled"><a href="#!">Newer <span aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
