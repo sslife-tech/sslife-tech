@@ -1,4 +1,4 @@
-baseurl = "https://blog-ss-life-tech.firebaseapp.com/"
+baseurl = "https://www.sslife.tech/"
 languageCode = "ja"
 title = "SS Life Tech"
 # Copyright notice. This is displayer in the footer.
@@ -7,7 +7,7 @@ theme = 'vienna'
 
 [params]
     image = "/images/bg.webp"
-    # ga_api_key = "Your Google Analytics tracking id"
+    ga_api_key = "UA-106924133-1"
     author = "しょうちゃん"
     avatar = "/images/shota.webp"
     # contact = "Your contact link (ex. mailto:foo@example.com)"
