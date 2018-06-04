@@ -9,9 +9,11 @@
  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  {{ with .Params.images }}{{ range first 5 . }}
-  <meta property="og:image" content="{{ . }}" />
-  {{ end }}{{ end }}
+  {{ if .Site.Params.featured_image }}
+  <meta property="og:image" content="{{ .Site.Params.featured_image }}" />
+  {{ else if .Params.featured_image }}
+  <meta property="og:image" content="{{ .Params.featured_image }}" />
+  {{ end }}
   {{ if .IsPage }}
   <meta property="og:type" content="article" />
   {{ with .Site.Params.facebook }}
@@ -22,6 +24,9 @@
   <meta property="og:article:tag" content="{{ . }}" />
   {{ end }}
   {{ else }}
+  {{ with .Site.Params.description }}
+  <meta property="og:description" content="{{ . }}" />
+  {{ end }}
   <meta property="og:type" content="website" />
   {{ end }}
 
