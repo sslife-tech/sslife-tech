@@ -6,6 +6,7 @@ copyright = "&copy; sslife.tech Copyright"
 theme = 'vienna'
 enableEmoji = true
 uglyURLs = true
+hrefTargetBlank = true
 
 [params]
     featured_image = "/images/ogp.png"

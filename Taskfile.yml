@@ -9,3 +9,7 @@ tasks:
     desc: "Create new blog"
     cmds:
       - hugo new blog/`date +%s`.md
+  minify:
+    desc: "Minify html"
+    cmds:
+      - html-minifier --collapse-whitespace --file-ext html --input-dir public --output-dir public
