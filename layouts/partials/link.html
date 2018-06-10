@@ -4,11 +4,7 @@
     <i class="fa fa-envelope"></i>
   </a>
   {{ end }}
-  {{ with .Site.Params.twitter }}
-  <a href="https://twitter.com/{{ . }}" target="_blank">
-    <i class="fa fa-twitter"></i>
-  </a>
-  {{ end }}
+  {{ partial "sns_share.html" . }}
   {{ with .Site.Params.instagram }}
   <a href="https://instagram.com/{{ . }}" target="_blank">
     <i class="fa fa-instagram"></i>
@@ -17,11 +13,6 @@
   {{ with .Site.Params.googleplus }}
   <a href="https://plus.google.com/+{{ . }}" target="_blank">
     <i class="fa fa-google"></i>
-  </a>
-  {{ end }}
-  {{ with .Site.Params.facebook }}
-  <a href="https://facebook.com/{{ . }}" target="_blank">
-    <i class="fa fa-facebook"></i>
   </a>
   {{ end }}
   {{ with .Site.Params.github }}

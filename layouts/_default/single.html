@@ -14,7 +14,7 @@
     {{ else }}
       <div class="post-date pull-right">
         Posted on
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}'>
           {{ .Date.Format "2006.1.2" }}
         </time>
       </div>
@@ -23,6 +23,10 @@
   </header>
   <section class="article-body">
     {{ .Content }}
+    <div class="sns-links row">
+      <h4 class="text-center">SNSでシェアする</h4>
+      {{ partial "sns_share.html" . }}
+    </div>
   </section>
   <footer>
     {{ if (isset .Params "nocomments")  }}

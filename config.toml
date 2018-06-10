@@ -9,7 +9,6 @@ uglyURLs = true
 hrefTargetBlank = true
 
 [params]
-    baseurlWithoutSlant = "https://www.sslife.tech"
     featured_image = "/images/ogp.png"
     image = "/images/bg.jpg"
     ga_api_key = "UA-106924133-1"

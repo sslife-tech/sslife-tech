@@ -372,3 +372,28 @@ iframe {
 .article-body {
     margin-top: 40px;
 }
+
+
+.article-body .sns-links {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.article-body .sns-links a {
+    display: inline-block;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(107, 171, 232, 1.0);
+    border-radius: 15px;
+    color: #rgba(107, 171, 232, 1.0);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    transition: color,border-color 0.1s linear;
+}
+
+.article-body .sns-links a:hover {
+    border-color: rgba(107, 171, 232, .6);
+    color: rgba(107, 171, 232, .6);
+}
