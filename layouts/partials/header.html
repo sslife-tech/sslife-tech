@@ -9,10 +9,10 @@
  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  {{ if .Site.Params.featured_image }}
-  <meta property="og:image" content="{{ .Site.Params.featured_image }}" />
-  {{ else if .Params.featured_image }}
-  <meta property="og:image" content="{{ .Params.featured_image }}" />
+  {{ if .Params.featured_image }}
+  <meta property="og:image" content="{{ .Site.Params.BaseurlWithoutSlant }}{{ .Params.featured_image }}" />
+  {{ else if .Site.Params.featured_image }}
+  <meta property="og:image" content="{{ .Site.Params.BaseurlWithoutSlant }}{{ .Site.Params.featured_image }}" />
   {{ end }}
   {{ if .IsPage }}
   <meta property="og:type" content="article" />
