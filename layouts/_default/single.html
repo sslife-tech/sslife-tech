@@ -23,9 +23,11 @@
   </header>
   <section class="article-body">
     {{ .Content }}
-    <div class="sns-links row">
+    <div class="row">
       <h4 class="text-center">SNSでシェアする</h4>
-      {{ partial "sns_share.html" . }}
+      <div class="sns-links">
+        {{ partial "sns_share.html" . }}
+      </div>
     </div>
   </section>
   <footer>
