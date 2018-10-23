@@ -13,7 +13,7 @@ Installation
 ---
 
 ```bash
-$ git clone https://github.com/sawadashota/sslife-tech.git
+$ git clone https://github.com/sslife-tech/sslife-tech.git
 $ git submodule update --init
 ```
 
